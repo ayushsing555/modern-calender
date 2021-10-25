@@ -22,15 +22,14 @@ btn.addEventListener("click",()=>{
                    if(day==d[j])
                        var final_day=j;
                 }
-                    console.log(`${final_month} and ${final_day}`);
+                   
                 if(final_month==0||final_month==2||final_month==4||final_month==6||final_month==7||final_month==9||final_month==11){
                     for(var k=1;k<=31;k++)
                     {
-                      console.log("singhal");
+                      
                       var date=new Date(year,final_month,k)
                          if(date.getDay()==final_day){
-                           console.log(date);
-                           console.log("ayushsinghal")
+                          
                            sum++;
                           document.getElementById("dates").innerHTML+=(date.toDateString()+"<br>");
                          }
