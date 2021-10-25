@@ -28,8 +28,7 @@ btn.addEventListener("click",()=>{
           {
               
               var dte=new Date(j,final_month,date);
-                  if(dte.getDay()==final_day)
-                    sum++;
+ 
               if(j%4!=0&&final_month==1&&date>28)
               {
               document.getElementById("dates").innerHTML+=" "
@@ -38,6 +37,8 @@ btn.addEventListener("click",()=>{
               document.getElementById("dates").innerHTML+=" ";
               }
               else{
+                   if(dte.getDay()==final_day)
+                    sum++;
               document.getElementById("dates").innerHTML+=(dte.toDateString()+"<br>");
               }
           }
