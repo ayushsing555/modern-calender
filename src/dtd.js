@@ -26,7 +26,7 @@ btn.addEventListener("click",()=>{
           var sum=0;
           for(var j=y1;j<=y2;j++)
           {
-              
+             
               var dte=new Date(j,final_month,date);
  
               if(j%4!=0&&final_month==1&&date>28)
