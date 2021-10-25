@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE TO DAY</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        body{
+            background-image:url(../image/image2.jpg)
+        }
+        #sum,#day,#dy{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2>DATE-TO-DAY</h2>
+            <div class="section"> 
+               <div class="section1" id="year">
+               <input type="number" id="y" placeholder="Enter Year">
+               </div>
+               <div class="section1" id="word">
+                   AND
+               </div>
+               <div class="section1" id="year2">
+               <input style="height: 30px;" type="number" id="y2" placeholder="Enter Year">
+               </div>
+               <div class="section1" id="month">
+               <select id="m">
+                   <option value="January">January(01)</option>
+                   <option value="February">February(02)</option>
+                   <option value="March">March(03)</option>
+                   <option value="April">April(04)</option>
+                   <option value="May">May(05)</option>
+                   <option value="June">June(06)</option>
+                   <option value="July">July(07)</option>
+                   <option value="August">August(08)</option>
+                   <option value="September">September(09)</option>
+                   <option value="October">October(10)</option>
+                   <option value="November">November(11)</option>
+                   <option value="December">December(12)</option>
+               </select>
+               </div>
+               <div class="section1" id="date">
+               <select id="dte">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>
+               </div>
+            </div>
+              <h3 style="color:rgb(255, 0, 0);background-color: whitesmoke; width: 500px;">SELECT DAY WHICH YOU WANT TO TOTAl SUM IN BETWEEN YEARS</h3><select id="d">
+               
+                    <option value="Sunday">Sunday(01)</option>
+                    <option value="Monday">Monday(02)</option>
+                    <option value="Tuesday">Tuesday(03)</option>
+                    <option value="Wednesday">Wednesday(04)</option>
+                    <option value="Thrusday">Thrusday(05)</option>
+                    <option value="Friday">Friday(06)</option>
+                    <option value="Saturday">Saturday(07)</option>
+              
+              </select>  
+            
+              <button id="btn">SHOW</button>
+              <!-- <h3 style="color:rgb(255, 0, 0);background-color: whitesmoke; width: 500px;">THE  TOTAl SUM OF <span id="day">day</span> BETWEEN YEARS IS <span id="sum"></span></h3><select id="d"> -->
+
+            <div class="result">
+               <!-- <h3>  The TOTAL NUMBER OF  DAY <span id="sday"></span> IS <span id="sum"></span>IN THE MONTH OF <span id="smon"></span></h3> -->
+              <h2  class="date" id="dates"></h2>
+            </div>   
+            <h3 style="color:rgb(255, 0, 0);background-color: whitesmoke; width: 500px;">The TOTAL NUMBER OF   <span id="day"></span> IS  <span id="sum"></span> IN <span id="dy"></span> YEARS  <span id="sum"></span></h3>
+
+             <button style="height: 42px;width: 200px;"onclick="Myfunction()">Switch to(DAY-TO-DATE)</button> 
+            <button style="height:42px; width: 200px;"onclick="Myfunction1()">Switch to(DAY-IN-YEAR)</button>  
+        </div>
+        </center>
+        <script src="../src/dtd.js"></script>
+        </script>
+        <script>
+            function Myfunction(){
+                location.href="dTOd.html";
+            }
+            function Myfunction1(){
+                location.href="dtoy.html";
+            }
+        </script>
+</body>
+</html>

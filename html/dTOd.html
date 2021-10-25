@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY TO DATE</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        body{
+            background-image: url(../image/image3.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2>DAY-TO-DATE</h2>
+        <div class="section"> 
+           <div class="section1" id="year">
+           <input type="number" id="y" placeholder="enter year">
+           </div>
+           <div class="section1" id="month">
+           <select id="m">
+               <option value="January(01)">January(01)</option>
+               <option value="February(02)">February(02)</option>
+               <option value="March(03)">March(03)</option>
+               <option value="April(04)">April(04)</option>
+               <option value="May(05)">May(05)</option>
+               <option value="June(06)">June(06)</option>
+               <option value="July(07)">July(07)</option>
+               <option value="August(08)">August(08)</option>
+               <option value="September(09)">September(09)</option>
+               <option value="October(10)">October(10)</option>
+               <option value="November(11)">November(11)</option>
+               <option value="December(12)">December(12)</option>
+           </select>
+           </div>
+           <div class="section1" id="day">
+               <select  id="d">
+                   <option value="Sunday(01)">Sunday(01)</option>
+                   <option value="Monday(02)">Monday(02)</option>
+                   <option value="Tuesday(03)">Tuesday(03)</option>
+                   <option value="Wednesday(04)">Wednesday(04)</option>
+                   <option value="Thrusday(05)">Thrusday(05)</option>
+                   <option value="Friday(06)">Friday(06)</option>
+                   <option value="Saturday(07)">Saturday(07)</option>
+               </select>
+           </div>
+        </div>
+          <button id="btn">SHOW</button>
+        <div class="result">
+           <h3>  The TOTAL NUMBER OF  DAY <span id="sday"></span> IS <span id="sum"></span>IN THE MONTH OF <span id="smon"></span></h3>
+          <h2  class="date" id="dates"></h2>
+        </div>   
+        <button style="height:42px;width:200px;" onclick="Myfunction()">Switch(DATE-TO-DAY)</button>  
+        <button style="height:42px;" onclick="Myfunction1()">Switch(DAY-IN-YEAR)</button>  
+    </div>
+    </center>
+    <script src="../src/script.js"></script>
+    <script>
+        function Myfunction(){
+            location.href="dtd.html";
+        }
+        function Myfunction1(){
+            location.href="dtoy.html";
+        }
+    </script>
+</body>
+</html>

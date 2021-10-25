@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MODERN CALENDER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/tdot.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .main{
+            font-family: 'Crimson Text', serif;
+            background-color: rgb(195, 208, 245);
+            margin-top: 32px;
+        }
+        *{
+            font-family: 'PT Serif', serif;
+        }
+       body{
+           background-image: url(IMAGE/image1.jpg);
+           background-size: cover;
+       }
+        #red{
+            color:red;
+            font-family: 'Oswald', sans-serif;
+        }
+        #blue{
+            color: rgb(56, 56, 56);
+            font-family: 'Oswald', sans-serif;
+        }
+        .container{
+            width: 1000px;
+            border: 2px solid rgb(178, 178, 189);
+            background-image: linear-gradient(skyblue,rgb(243, 243, 176),rgb(255, 182, 182),rgb(255, 225, 169), rgb(73, 73, 149) 50%);
+            border:none;
+            box-shadow: 2px 3px 3px 2px rgb(207, 253, 207);
+
+        }
+        #btn11,#btn21,#btn31{
+            width: 150px;
+            margin-top: 10px;
+        }
+        #cdtd,#cdtoy{
+            display:none;
+        }
+       #btn11{
+           display: none;
+       }
+    </style>
+</head>
+<body>
+    <center>
+
+        <div class="container">
+        <h1> A MODERN CALENDER</h1>
+        <b>Please read three sections before go ahead</b>
+        <div class="section">
+            <div class="section1" id="dtod">
+           <button id="btn1" onclick="dtod()">
+            FIND(DAY-TO-DATE)
+             </button>
+             <button id="btn11">
+                 READ
+             </button>
+            </div>
+            <div class="section1" id="dtd">
+             <button id="btn2" onclick="dtd()">
+                FIND(DATE-TO-DAY)
+             </button>
+             <button id="btn21">
+                READ
+            </button>
+            </div>
+            <div class="section1" id="dtoy">
+                <button id="btn3" onclick="dtoy()"> FIND(DAY-IN-YEAR)</button>
+                <button id="btn31">
+                    READ
+                </button>
+            </div>
+        </div>
+        <div class="contain">
+            <h2>
+            <div class="main" id="main">
+                <span id="red">
+                A calendar year is a one-year period that begins on January 1 and ends on December 31, based on the commonly-used Gregorian calendar.
+               </span>
+                <br>
+                <span id="blue">
+                Calendars are useful tools for keeping track of upcoming meetings, deadlines, and milestones. They can help you visualize your schedule and remind you of important events, such as holidays and vacation time.
+           </span>
+             </div>
+            <div class="main" id="cdtod">
+                <h3>DAY-TO-DATE</h3>
+              <h4>
+                   In DAY-TO-DATE,you can get the dates of the dayin the month of  the year.
+                   At first,enter the year(1700-2100) in input box and you have to select the day and month before pressing the button otherwise it will automatically assume january and sunday.you will be able to see the dates after pressing the button named "show".  
+              </h4>
+            </div>
+            <div class="main" id="cdtd">
+                <h3>DATE-TO-DAY</h3>
+            <h4>
+                In DATE-TO-DAY,you can get  days of date in month of year.
+                At first,enter  the year(1700-2100) in both input box and you have to select the day and month and date before pressing the button other wise it will automatically assume january, 1 and sunday.you will be able to see the dates after pressing the button named "show".  
+                in this feature,you can also see the total number of days of the particular month of the years.
+            </h4>
+            </div>
+            <div class="main" id="cdtoy">
+
+               <h3>DAY-IN-YEAR</h3> 
+            <h4> 
+                In DATE-TO-DAY,you can get  days of date of years.
+                At first,enter  the year(1700-2100) in input box and you have to select the date  before pressing the button other wise it will automatically assume "1".you will be able to see the days after pressing the button named "show".  
+            </h4>
+            </div>
+            </h2>
+        </div>
+    </center>
+</div>
+     <script src="src/jquery.js"></script>
+    <script>
+        function dtod(){
+            location.href="html/dTOd.html"
+        }
+        function dtd(){
+            location.href="html/dtd.html"
+        }
+        function dtoy(){
+            location.href="html/dtoy.html"
+        }
+    </script>
+</body>
+</html>
